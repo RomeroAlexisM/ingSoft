@@ -24,6 +24,36 @@ input[type="submit"] {
   margin-top: 40px;
 }
 
+.colorFondo {
+  background-color: #2699FB;
+}
+
+.fondoBlanco {
+  background-color: #FFFFFF;
+}
+
+.colorTexto {
+  color: #2699FB;
+}
+
+.textoBlanco {
+  color: #FFFFFF;
+}
+
+.borde {
+  border: 1px solid #2699FB;
+}
+
+.hover:hover {
+  background-color: #2699FB;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.row p {
+  font-size: 1.1em;
+}
+
 #bienvenido {
   margin-top: -40px;
   margin-left: -32px;
@@ -41,4 +71,37 @@ input[type="submit"] {
 
 #bienvenido h1 {
   padding-top: 15px;
+}
+
+#logOut:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* .margen {
+  margin-left: 10px;
+} */
+
+@media only screen and (max-width: 768px) {
+  .margen {
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  .mBottom {
+    margin-bottom: 20px;
+  }
+
+  .ajustarTamaño {
+    max-width: 70%;
+    margin-left: 15%;
+    max-height: 60px;
+    font-size: 1.4em;
+  }
+  .container{
+    height: 630px;
+  }
+  .row{
+    height: 100%;
+  }
+
 }
