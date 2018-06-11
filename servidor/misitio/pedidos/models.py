@@ -7,10 +7,16 @@ class Usuario(models.Model):
     email = models.EmailField(max_length=70, blank=True, null=True, unique=True)
     password = models.TextField()
 
+    def __str__(self):
+        return self.email
+
 
 class Tecnico(models.Model):
     email = models.EmailField(max_length=70, blank=True, null=True, unique=True)
     password = models.TextField()
+
+    def __str__(self):
+        return self.email
 
 
 class Pedido(models.Model):
@@ -21,5 +27,8 @@ class Pedido(models.Model):
     detalles = models.TextField()
     prioridad = models.TextField()
     sistema = models.TextField()
-    fecha = models.DateTimeField('Fecha Publicada')
-    archivo_adjunto = models.FileField()
+    fecha = models.DateTimeField('Fecha Publicada', null=True)
+    archivo_adjunto = models.FileField(null=True)
+
+    def __str__(self):
+        return self.asunto
