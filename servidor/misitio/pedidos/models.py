@@ -27,7 +27,7 @@ class Pedido(models.Model):
     detalles = models.TextField()
     prioridad = models.TextField()
     sistema = models.TextField()
-    fecha = models.DateTimeField('Fecha Publicada', null=True)
+    fecha = models.TextField(null=True)
     archivo_adjunto = models.FileField(null=True)
 
     def __str__(self):
