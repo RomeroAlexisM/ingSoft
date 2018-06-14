@@ -2,6 +2,9 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from .models import *
 from .serializers import *
+from rest_framework import generics
+from rest_framework.response import Response
+from rest_framework.decorators import detail_route
 
 # Create your views here.
 
@@ -21,3 +24,17 @@ class PedidoView(viewsets.ModelViewSet):
     lookup_field = 'id'
     serializer_class = PedidoSerializer
     queryset = Pedido.objects.all()
+
+class PedidoMiUsuario(viewsets.ViewSet):
+    queryset = Pedido.objects.all()
+    serializer_class = PedidoSerializer
+    lookup_field = 'autor'
+    filter_backend = DjangoFilterBackend
+    
+
+
+
+
+
+
+
