@@ -9,6 +9,9 @@ router.register('tecnicos', views.TecnicoViewSet)
 router.register('pedidos', views.PedidoViewSet)
 router.register('mispedidos', views.PedidoMiUsuarioSet)
 router.register('registrar', views.Registrar, base_name = 'registro')
+router.register('login', views.LoginView, base_name = 'login')
+router.register('logout', views.LogoutView, base_name = 'logout')
+
 
 
 urlpatterns = [
