@@ -13,6 +13,7 @@ router.register('login', views.LoginView, base_name = 'login')
 router.register('logout', views.LogoutView, base_name = 'logout')
 
 
+
 urlpatterns = [
     path('', include(router.urls))
 ]
