@@ -1,8 +1,7 @@
 <template>
   <div id="pedidos">
     <div class="row margenSuperior">
-      <!-- <button class="btn btn-primary"type="button" name="button" v-on:click='obtenerPedidos'>Pedidos</button> -->
-      <div class="card tarjetas text-center centrar" v-for="pedido in pedidos" :key="pedido.key">
+      <div class="card tarjetas text-center centrar" v-if="!editar" v-for="pedido in pedidos" :key="pedido.key">
         <div class="card-body">
           <h3 class="tamañoTitulo">{{ pedido.tipo_de_pedido }}</h3>
           <p>{{ pedido.asunto }}</p>
@@ -14,18 +13,19 @@
           <button type="button" name="editar" class="btn btn-primary"  v-on:click="editarPedido(pedido.id)">EDITAR</button>
         </div>
       </div>
+      <editarPedido v-else-if="editar"></editarPedido>
     </div>
   </div>
 </template>
 <script>
-// import editarPedido from './editarPedido'
+import editarPedido from './editarPedido'
 import axios from 'axios'
-// import EventBus from './bus'
+import eventBus from '../bus'
 export default {
   name: "pedidos",
   data() {
-    // editar =false;
     return {
+      editar: false,
       pedidos: []
     }
   },
@@ -41,10 +41,12 @@ export default {
   },
   methods: {
     editarPedido(idPedido) {
+      eventBus.$emit('editarPedido', this.pedidos[idPedido]);
       this.editar = !this.editar;
-      EventBus.$emit('editarPedido', this.pedidos[idPedido]);
     }
-
+  },
+  components: {
+    editarPedido
   }
 }
 </script>

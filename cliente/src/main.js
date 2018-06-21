@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import barraBienvenida from './components/barraBienvenida.vue'
+import login from './components/login.vue'
 
 new Vue({
   el: '#app',
-  render: h => h(barraBienvenida)
+  render: h => h(login)
 })

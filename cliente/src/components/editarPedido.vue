@@ -1,20 +1,20 @@
 <template>
   <div id="editarPedido">
-    <h1>EDITAR</h1>
+    <h1>{{ pedido_id }} la wea</h1>
   </div>
 </template>
 <script>
-import EventBus from './bus'
+import eventBus from '../bus.js'
 export default {
   name: "editarPedido",
-  data: () => ({
-    // pedido: []
-  }),
+  data: function(){
+    return {
+      pedido_id: ''
+    }
+  },
  created: function() {
-
-      EventBus.$on('editarPedido',function(detallePedido){
-        console.log(detallePedido)
-        // this.pedido = detallePedido
+      eventBus.$on('editarPedido', function(detallePedido){
+        this.pedido_id = detallePedido.id
       });
 
   }
