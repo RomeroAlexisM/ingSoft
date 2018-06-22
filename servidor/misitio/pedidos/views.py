@@ -41,10 +41,24 @@ class PedidoMiUsuarioSet(viewsets.ModelViewSet):
 class Registrar(mixins.CreateModelMixin, viewsets.GenericViewSet):
     serializer_class = UsuarioSerializer
 
+    def create(self, request, *args, **kwargs):
+        #  Creando un nuevo usuario
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
+        user = User.objects.create_user(username, email, password)
+        user.save()
+
+        token = Token.objects.create(user=user)
+
+        return Response({'detail': 'El usuario fue creado con el token: ' + token.key})
+
 
 class LoginView(mixins.CreateModelMixin, viewsets.GenericViewSet):
     serializer_class = LoginSerializer
-    def post(self, request):
+
+    def create(self, request):
         serializer = LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data["user"]
@@ -56,7 +70,7 @@ class LoginView(mixins.CreateModelMixin, viewsets.GenericViewSet):
 class LogoutView(mixins.CreateModelMixin, viewsets.GenericViewSet):
     authentication_classes = (TokenAuthentication, )
 
-    def post(self, request):
+    def create(self, request):
         django_logout(request)
         return Response(status=204)
 
