@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <div class="row" id="login" v-if="!logueado">
-      <div class="jumbotron boxLogin">
+  <div class="container" id="login" >
+    <div class="row " v-if="!logueado">
+      <div class="jumbotron boxLogin centrar">
         <div class="" id="bienvenido">
           <h1>BIENVENIDO</h1>
         </div>
@@ -32,19 +32,18 @@ export default {
   },
   methods: {
     loguear() {
-      axios.post('http://127.0.0.1:8000/login', {
-    firstName: this.username,
-    lastName: this.password
-    })
-    .then(function (response) {
-      this.logueado = !this.logueado;
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-
-
+      axios.post('http://127.0.0.1:8000/login/', {
+        username: this.username,
+        password: this.password
+      })
+      .then((response) => {
+        this.logueado = !this.logueado;
+        // console.log(response);
+      })
+      .catch((error) => {
+      alert("usuario desconosido");
+        console.log(error);
+      });
     }
   },
   components: {
@@ -53,13 +52,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import './node_modules/bootstrap/scss/bootstrap.scss';
-// #login {
-//   margin-left: 35%;
-// }
-@media only screen and (max-width: 768px) {
-  #login {
-    margin-left: 5%;
+  @import './node_modules/bootstrap/scss/bootstrap.scss';
+
+  .centrar {
+    margin: 0 auto;
   }
-}
+
 </style>
