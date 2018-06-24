@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "tipo_de_pedido": "Error",
+        "autor": 1,
+        "tecnico_asignado": 1,
+        "asunto": "Asunto 1",
+        "detalles": "detalles bla bla",
+        "prioridad": "alta",
+        "sistema": "Compras",
+        "fecha": "2018-06-05T04:00:00Z",
+        "archivo_adjunto": null
+    },
+ 	{
+        "id": 2,
+        "tipo_de_pedido": "Error",
+        "autor": 1,
+        "tecnico_asignado": 1,
+        "asunto": "Asunto 1",
+        "detalles": "detalles bla bla",
+        "prioridad": "alta",
+        "sistema": "Compras",
+        "fecha": "2018-06-05T04:00:00Z",
+        "archivo_adjunto": null
+    },
+	{
+        "id": 3,
+        "tipo_de_pedido": "Error",
+        "autor": 1,
+        "tecnico_asignado": 1,
+        "asunto": "Asunto 1",
+        "detalles": "detalles bla bla",
+        "prioridad": "alta",
+        "sistema": "Compras",
+        "fecha": "2018-06-05T04:00:00Z",
+        "archivo_adjunto": null
+    },
+    {
+          "id": 4,
+          "tipo_de_pedido": "Error",
+          "autor": 1,
+          "tecnico_asignado": 1,
+          "asunto": "Asunto 1",
+          "detalles": "detalles bla bla",
+          "prioridad": "alta",
+          "sistema": "Compras",
+          "fecha": "2018-06-05T04:00:00Z",
+          "archivo_adjunto": null
+      },
+      {
+            "id": 5,
+            "tipo_de_pedido": "Error",
+            "autor": 1,
+            "tecnico_asignado": 1,
+            "asunto": "Asunto 1",
+            "detalles": "detalles bla bla",
+            "prioridad": "alta",
+            "sistema": "Compras",
+            "fecha": "2018-06-05T04:00:00Z",
+            "archivo_adjunto": null
+        },
+        {
+              "id": 6,
+              "tipo_de_pedido": "Error",
+              "autor": 1,
+              "tecnico_asignado": 1,
+              "asunto": "Asunto 1",
+              "detalles": "detalles bla bla",
+              "prioridad": "alta",
+              "sistema": "Compras",
+              "fecha": "2018-06-05T04:00:00Z",
+              "archivo_adjunto": null
+          }
+]

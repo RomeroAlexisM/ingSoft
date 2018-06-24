@@ -73,12 +73,3 @@ class LogoutView(mixins.CreateModelMixin, viewsets.GenericViewSet):
     def create(self, request):
         django_logout(request)
         return Response(status=204)
-
-
-
-
-
-
-
-
-

@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c130affd-8944-40a2-a0fb-b712c2990b83" name="Default" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/ingSoft.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ingSoft.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/css/styleSheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliente/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/js/servidor.js" beforeDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/misitio/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/misitio/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/misitio/misitio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/misitio/misitio/urls.py" afterDir="false" />
@@ -10,6 +21,7 @@
       <change beforePath="$PROJECT_DIR$/servidor/misitio/pedidos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/misitio/pedidos/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/misitio/pedidos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/misitio/pedidos/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servidor/virenv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/servidor/virenv/pip-selfcheck.json" afterDir="false" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +35,13 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/misitio/misitio/settings.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="680">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+=======
             <state relative-caret-position="492">
               <caret line="135" column="58" selection-start-line="135" selection-start-column="39" selection-end-line="135" selection-end-column="58" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
             </state>
           </provider>
         </entry>
@@ -32,11 +49,16 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/views.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="37" />
+=======
             <state relative-caret-position="660">
               <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
             </state>
           </provider>
         </entry>
@@ -44,10 +66,37 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/urls.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="51">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+=======
             <state relative-caret-position="240">
               <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,8 +105,15 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+=======
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -68,8 +124,13 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/models.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="187">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+=======
             <state relative-caret-position="225">
               <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -77,6 +138,18 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+=======
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -145,10 +218,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
+    <option name="x" value="782" />
+    <option name="width" value="591" />
+    <option name="height" value="735" />
+=======
     <option name="x" value="693" />
     <option name="y" value="45" />
     <option name="width" value="641" />
     <option name="height" value="696" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -211,7 +290,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/servidor/virenv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -313,15 +392,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+=======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16448885" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50038433" side_tool="true" weight="0.3298193" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49961567" weight="0.3290938" />
+=======
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49961567" weight="0.0" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -344,6 +430,61 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/servidor/project/settings.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/abm/apps.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/servidor/wsgi.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/django/contrib/admin/sites.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/servidor/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/servidor/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/abm/views.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/servidor/settings.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/abm/admin.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/abm/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/manage.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/abm/models.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/abm/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/controlpedidos/apps.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/controlpedidos/admin.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/proyecto/settings.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/controlpedidos/views.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/controlpedidos/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/proyecto/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/proyecto/controlpedidos/models.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/models.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/apps.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/admin.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/tests.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/pedidos/views.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/ingSoft/ingSoft/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/views.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/models.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/apps.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/admin.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/gestordesarrollo/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/ingSoft/manage.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/ingSoft/ingSoft/settings.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/gestor/serializadores.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/gestor/models.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/gestor/urls.py" />
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+=======
     <entry file="file://$PROJECT_DIR$/servidor/servidor/__init__.py" />
     <entry file="file://$PROJECT_DIR$/servidor/servidor/urls.py" />
     <entry file="file://$PROJECT_DIR$/servidor/abm/views.py" />
@@ -441,28 +582,85 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="51">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+=======
         <state relative-caret-position="240">
           <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/misitio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+=======
     <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/misitio/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servidor/misitio/pedidos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 1dade89c4bc20bf19cc1f50436b0f5865af33be8
   </component>
 </project>

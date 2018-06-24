@@ -1,49 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Ingenieria de software</title>
-    <meta name="viewport" content="width=divice-width, initial-escale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styleSheet.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
+    <title>cliente</title>
   </head>
   <body>
-    <div class="container"  id="app">
-      <div class="row" v-if="mostrar">
-        <div class="jumbotron boxLogin">
-          <div class="" id="bienvenido">
-            <h1>BIENVENIDO</h1>
-          </div>
-          <form method="POST" class="formulario" name="login" id="form_login">
-            <label for="">Nombre de usuario:</label>
-            <input type="text" name="username" value="username" class="form-control">
-            <label for="">Contraseña:</label>
-            <input type="password" name="password" value="password" class="form-control">
-            <a id="recuperarContraseña" href="#">¿Haz olvidado tu contraseña?</a>
-            <input type="button" v-on:click="cambiarEstado" name="" class="btn" value="Conectarse">
-          </form>
-        </div>
-      </div>
-      <div class="row tamaño colorFondo" v-else>
-        <div class="textoBlanco col-12">
-          <a href="#" id="logOut" v-on:click="cambiarEstado" class=" textoBlanco ">LOGOUT</a>
-          <p class="text-center">BIENVENIDO "usuario"</p>
-
-        </div>
-        <div class=" margen ajustarTamaño colorTexto borde fondoBlanco hover col-12 col-md-4">
-          <p class="text-center mt-2">NUEVO REQUERIMIENTO</p>
-        </div>
-        <div class=" margen ajustarTamaño colorTexto borde fondoBlanco hover col-12 col-md-4">
-          <p class="text-center mt-2">INFORMAR ERROR</p>
-        </div>
-        <div class=" margen mBottom ajustarTamaño colorTexto borde fondoBlanco hover col-12 col-md-4">
-          <p class="text-center mt-2">MIS PEDIDOS</p>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <div  id="app"></div>
+    <script src="/dist/build.js"></script>
   </body>
 </html>

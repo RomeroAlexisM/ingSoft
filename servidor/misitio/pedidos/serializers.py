@@ -6,14 +6,6 @@ from django.contrib.auth import authenticate, login
 from rest_framework import exceptions
 from django.conf import settings
 from django.utils.translation import gettext as _
-import requests
-
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication, TokenAuthentication
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
-
 
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
@@ -46,11 +38,9 @@ class PedidoSerializer(serializers.ModelSerializer):
                   'archivo_adjunto')
 
 
-
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField()
-
     def validate(self, data):
         username = data.get("username", "")
         password = data.get("password", "")
