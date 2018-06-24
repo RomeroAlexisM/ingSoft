@@ -11,7 +11,6 @@ class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username',
-                  'email',
                   'password')
 
 
@@ -41,15 +40,11 @@ class PedidoSerializer(serializers.ModelSerializer):
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
-    email = serializers.CharField()
     password = serializers.CharField()
 
     def validate(self, data):
         username = data.get("username", "")
-        email = data.get("email", "")
         password = data.get("password", "")
-        print(password)
-        print(email)
         if username and password:
             user = authenticate(username=username, password=password)
             if user:
