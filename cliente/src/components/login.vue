@@ -20,6 +20,7 @@
 </template>
 <script>
 import barraBienvenida from './barraBienvenida'
+import axios from 'axios'
 export default {
   name: "login",
   data: function(){
@@ -31,17 +32,18 @@ export default {
   },
   methods: {
     loguear() {
-      axios.post('/login', {
+      axios.post('http://127.0.0.1:8000/login', {
     firstName: this.username,
     lastName: this.password
     })
     .then(function (response) {
+      this.logueado = !this.logueado;
       console.log(response);
     })
     .catch(function (error) {
       console.log(error);
     });
-      // this.logueado = !this.logueado;
+
 
     }
   },
@@ -52,7 +54,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import './node_modules/bootstrap/scss/bootstrap.scss';
-#login {
-  margin: 0 auto;
+// #login {
+//   margin-left: 35%;
+// }
+@media only screen and (max-width: 768px) {
+  #login {
+    margin-left: 5%;
+  }
 }
 </style>

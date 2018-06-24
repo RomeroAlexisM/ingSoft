@@ -2,10 +2,16 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers
 
+
 router = routers.DefaultRouter()
-router.register('usuarios', views.UsuarioView)
-router.register('tecnico', views.TecnicoView)
-router.register('pedidos', views.PedidoView)
+router.register('usuarios', views.UsuarioViewSet)
+router.register('tecnicos', views.TecnicoViewSet)
+router.register('pedidos', views.PedidoViewSet)
+router.register('mispedidos', views.PedidoMiUsuarioSet)
+router.register('registrar', views.Registrar, base_name = 'registro')
+router.register('login', views.LoginView, base_name = 'login')
+router.register('logout', views.LogoutView, base_name = 'logout')
+
 
 
 urlpatterns = [
