@@ -14,19 +14,21 @@ from django.contrib.auth import login as django_login, logout as django_logout
 from rest_framework.authtoken.models import Token
 from rest_framework.authentication import TokenAuthentication
 
+from django.contrib.auth import get_user_model
+Usuario = get_user_model()
 
 # Create your views here.
 
 class UsuarioViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
     serializer_class = UsuarioSerializer
-    queryset = User.objects.all()
+    queryset = Usuario.objects.all()
 
 
 class TecnicoViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
-    serializer_class = TecnicoSerializer
-    queryset = Tecnico.objects.all()
+    serializer_class = UsuarioSerializer
+    queryset = Usuario.objects.all()
 
 
 class PedidoViewSet(viewsets.ModelViewSet):
@@ -47,7 +49,7 @@ class Registrar(mixins.CreateModelMixin, viewsets.GenericViewSet):
         email = request.POST.get('email')
         password = request.POST.get('password')
 
-        user = User.objects.create_user(username, email, password)
+        user = Usuario.objects.create_user(username, email, password)
         user.save()
 
         token = Token.objects.create(user=user)
@@ -61,7 +63,7 @@ class LoginView(mixins.CreateModelMixin, viewsets.GenericViewSet):
     def create(self, request):
         serializer = LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = serializer.validated_data["user"]
+        user = serializer.validated_data["usuario"]
         django_login(request, user)
         token, created = Token.objects.get_or_create(user=user)
         return Response({"token": token.key}, status=200)

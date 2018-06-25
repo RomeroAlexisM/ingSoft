@@ -7,20 +7,24 @@ from rest_framework import exceptions
 from django.conf import settings
 from django.utils.translation import gettext as _
 
+from django.contrib.auth import get_user_model
+Usuario = get_user_model()
+
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = Usuario
         fields = ('username',
-                  'password')
+                  'password',
+                  'es_tecnico')
 
 
 
-class TecnicoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Tecnico
-        fields = ('id',
-                  'email',
-                  'password')
+# class TecnicoSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Tecnico
+#         fields = ('id',
+#                   'email',
+#                   'password')
 
 
 class PedidoSerializer(serializers.ModelSerializer):
