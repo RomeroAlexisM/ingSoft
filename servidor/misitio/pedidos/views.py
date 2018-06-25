@@ -22,13 +22,13 @@ Usuario = get_user_model()
 class UsuarioViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
     serializer_class = UsuarioSerializer
-    queryset = Usuario.objects.all()
+    queryset = Usuario.objects.all().filter(es_tecnico = False)
 
 
 class TecnicoViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
     serializer_class = UsuarioSerializer
-    queryset = Usuario.objects.all()
+    queryset = Usuario.objects.all().filter(es_tecnico = True)
 
 
 class PedidoViewSet(viewsets.ModelViewSet):
