@@ -15,7 +15,6 @@ from rest_framework.authtoken.models import Token
 from rest_framework.authentication import TokenAuthentication
 
 from django.contrib.auth import get_user_model
-Usuario = get_user_model()
 
 # Create your views here.
 
@@ -45,11 +44,11 @@ class Registrar(mixins.CreateModelMixin, viewsets.GenericViewSet):
 
     def create(self, request, *args, **kwargs):
         #  Creando un nuevo usuario
-        username = request.POST.get('username')
-        email = request.POST.get('email')
-        password = request.POST.get('password')
+        username = request.POST.get('user.username')
+        password = request.POST.get('user.password')
+        print(username)
 
-        user = Usuario.objects.create_user(username, email, password)
+        user = User.objects.create_user(username, password)
         user.save()
 
         token = Token.objects.create(user=user)
